@@ -48,3 +48,18 @@ Push this repository to private GitHub, connect it to Render, and deploy using t
 
 ## Error handling
 Invalid date formats, dates outside the supported historical range, missing model artefacts, and upstream Open-Meteo failures return explicit HTTP errors rather than crashing the service.
+GitHub API Repository:
+https://github.com/Muthu2125/36120-26SP-AT2-26019772-api
+
+Render API:
+https://three6120-26sp-at2-26019772-api.onrender.com
+
+Swagger Documentation:
+https://three6120-26sp-at2-26019772-api.onrender.com/docs
+
+Docker Hub:
+muthu211007/weather-api-26019772
+
+Docker Tags:
+latest
+1.0.0
