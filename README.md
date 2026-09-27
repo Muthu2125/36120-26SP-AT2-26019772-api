@@ -63,3 +63,54 @@ muthu211007/weather-api-26019772
 Docker Tags:
 latest
 1.0.0
+
+## Related Resources
+
+**Experimentation Repository:**  
+https://github.com/Muthu2125/36120-26SP-AT2-26019772-experiments
+
+**TestPyPI Package:**  
+https://test.pypi.org/project/uts-aml-weather-26019772/0.1.0/
+
+**Docker Hub:**  
+https://hub.docker.com/r/muthu211007/weather-api-26019772
+
+**Render API:**  
+https://three6120-26sp-at2-26019772-api.onrender.com
+
+**Swagger Documentation:**  
+https://three6120-26sp-at2-26019772-api.onrender.com/docs
+
+## Production Verification
+
+Example input date: `2025-01-01`
+
+Climate Comfort Index endpoint:
+
+- `2025-01-02` → `81.46`
+- `2025-01-03` → `76.55`
+- `2025-01-04` → `73.57`
+
+Weather Hazard Category endpoint:
+
+- `2025-01-08` → `Moderate Risk`
+
+Invalid date inputs return HTTP `422` instead of causing the API to fail.
+
+## Model Artefacts
+
+The API repository contains the trained production artefacts:
+
+### Climate Comfort
+- `models/comfort_climate/cci_h1.joblib`
+- `models/comfort_climate/cci_h1.json`
+- `models/comfort_climate/cci_h2.joblib`
+- `models/comfort_climate/cci_h2.json`
+- `models/comfort_climate/cci_h3.joblib`
+- `models/comfort_climate/cci_h3.json`
+
+### Weather Hazard
+- `models/weather_hazard/whc_h7.joblib`
+- `models/weather_hazard/whc_h7.json`
+
+The models can be regenerated using the experimentation repository if required.
